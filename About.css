@@ -1,0 +1,392 @@
+/* .first-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 130px 0;
+}
+
+.left_part h1 {
+    text-align: center;
+    font-size: 2.1rem;
+    padding-bottom: 20px;
+
+}
+
+.about_desc p {
+    font-size: 1.3rem;
+    margin: 4px 20px;
+    word-spacing: 60%;
+}
+
+.purple {
+    color: purple;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+.right_part img {
+    width: 40vw;
+    margin: auto;
+}
+
+.aboutactivity {
+    list-style: square;
+    padding: 15px 60px;
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.second-section{
+    text-align: center;
+    height: 60vh;
+    margin: 0px 0px
+}
+.second-section h1{
+    padding-top: 15px;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.second-section h5{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.skills{
+    justify-content: center;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.second-section img{
+    width: 10vw;
+} 
+.icons{
+    border: 1.7px solid rgba(200,137,230,.637)!important;
+    border-radius: 5px!important;
+    box-shadow: 4px 5px 4px 3px rgba(89,4,168,.137)!important;
+    display: table!important;
+    font-size: 4.5em!important;
+    margin: 15px!important;
+    opacity: .93!important;
+    overflow: hidden!important;
+    padding: 10px!important;
+    text-align: center!important;
+    transition: all .4s ease 0s!important;
+    vertical-align: middle!important;
+}
+.icons:hover {
+    border: 2.2px solid rgba(197,115,230,.883)!important;
+    overflow: hidden!important;
+    transform: scale(1.05)!important;
+}
+.tools{
+    justify-content: center;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section-third{
+    text-align: center;
+    height: 90vh;
+    margin: 240px 0px;
+}
+.section-third h1{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.section-third img{
+    width: 10vw;
+}
+.section-third h5{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.section-third-first{
+    text-align: center;
+    height: 50vh;
+}
+.section-third-first h1{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.section-third-first img{
+    width: 11vw;
+}
+.section-third-first img{
+    height: 10vw;
+}
+.section-third-first h5{
+    font-size: 1rem;
+    font-weight: bolder;
+} */
+
+/* Responsive Code */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    color: #fff;
+    /* padding: 15px 0; */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .left {
+    font-size: 1.5rem;
+}
+
+header .right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header .right ul li {
+    margin-left: 20px;
+}
+
+header .right ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.first-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 130px 0;
+    flex-wrap: wrap;
+}
+
+.left_part h1 {
+    text-align: center;
+    font-size: 2.1rem;
+    padding-bottom: 20px;
+}
+
+.about_desc p {
+    font-size: 1.3rem;
+    margin: 4px 20px;
+    word-spacing: 60%;
+}
+
+.purple {
+    color: purple;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+.right_part img {
+    width: 40vw;
+    margin: auto;
+}
+
+.aboutactivity {
+    list-style: square;
+    padding: 15px 60px;
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.second-section {
+    text-align: center;
+    height: auto;
+    margin: 0px 0px;
+}
+
+.second-section h1 {
+    padding-top: 15px;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.second-section h5 {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.skills {
+    justify-content: center;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.second-section img {
+    width: 10vw;
+}
+
+.icons {
+    border: 1.7px solid rgba(200,137,230,.637)!important;
+    border-radius: 5px!important;
+    box-shadow: 4px 5px 4px 3px rgba(89,4,168,.137)!important;
+    display: table!important;
+    font-size: 4.5em!important;
+    margin: 15px!important;
+    opacity: .93!important;
+    overflow: hidden!important;
+    padding: 10px!important;
+    text-align: center!important;
+    transition: all .4s ease 0s!important;
+    vertical-align: middle!important;
+}
+
+.icons:hover {
+    border: 2.2px solid rgba(197,115,230,.883)!important;
+    overflow: hidden!important;
+    transform: scale(1.05)!important;
+}
+
+.tools {
+    justify-content: center;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-third {
+    text-align: center;
+    height: auto;
+    margin: 240px 0px;
+}
+
+.section-third h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.section-third img {
+    width: 10vw;
+}
+
+.section-third h5 {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.section-third-first {
+    text-align: center;
+    height: auto;
+}
+
+.section-third-first h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.section-third-first img {
+    width: 11vw;
+}
+
+.section-third-first img {
+    height: 10vw;
+}
+
+.section-third-first h5 {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.footer {
+    background-color: rgb(80, 73, 121);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer ul li {
+    margin: 0 10px;
+}
+
+.footer ul li a img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 768px) {
+    .first-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right_part img {
+        width: 80vw;
+    }
+
+    .second-section img,
+    .section-third img,
+    .section-third-first img {
+        width: 20vw;
+    }
+
+    .icons {
+        font-size: 2em!important;
+        padding: 5px!important;
+    }
+
+    .second-section h1, 
+    .section-third h1, 
+    .section-third-first h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    .first-section {
+        margin: 50px 0;
+    }
+
+    .about_desc p {
+        font-size: 1rem;
+        word-spacing: normal;
+    }
+
+    .aboutactivity {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .second-section img,
+    .section-third img,
+    .section-third-first img {
+        width: 30vw;
+    }
+
+    .icons {
+        font-size: 1.5em!important;
+        padding: 2px!important;
+    }
+
+    .second-section h1, 
+    .section-third h1, 
+    .section-third-first h1 {
+        font-size: 1.5rem;
+    }
+}
