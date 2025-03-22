@@ -1,200 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificates of Laxmi </title>
+    <title>Certificates of Laxmi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="About.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,300;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="certificate.css">
-    <link rel="stylesheet" href="resume.css">
 </head>
-
 <body>
     <header>
-        <nav>
-            <div><img class="logoimg" src="iMAGES\L_1.png" alt="my logo"></div>
-            <div class="left">Laxmi's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="About.html">About Me</a></li>
-                    <li><a href="certificate.html">Certificates</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="Resume.html">Resume</a></li>
-                </ul>
+        <nav class="container">
+            <div class="left">
+                <img class="logoimg" src="iMAGES\L_1.png" alt="my logo">
+                Laxmi's Portfolio
             </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Me</a></li>
+                <li><a href="certificate.html">Certificates</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section class="first_section">
-            <h1><span><u>Education Certificates</u></span></h1>
-            <div class="box">
-                <div class="certficates">
-                    <u><h3>1. HTML & CSS Certification Course</h3></u>
-                    <br>
-                    <p>Issued by : Udemy</p>
-                    <br>
-                    <p>Credential ID : UC-584f971b-607b-4cbd-8958-ee8b749e11fc</p>
-                    <br>
-                    <p class="certificate_link">Crediential Link:
-                        <a
-                            href="https://www.udemy.com/certificate/UC-584f971b-607b-4cbd-8958-ee8b749e11fc/">HTML&CSS</a>
+        <section class="first_section container">
+            <h1 class="section-heading"><u>Education Certificates</u></h1>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <h3>HTML & CSS Certification Course</h3>
+                    <p>Issued by: Udemy</p>
+                    <p>Credential ID: UC-584f971b-607b-4cbd-8958-ee8b749e11fc</p>
+                    <p class="certificate_link">Credential Link: 
+                        <a href="https://www.udemy.com/certificate/UC-584f971b-607b-4cbd-8958-ee8b749e11fc/">HTML & CSS</a>
                     </p>
-
                     <div class="certificate_img">
-                        <img src="iMAGES/html&css.jpg" alt="Html&CSS certificate">
+                        <img src="iMAGES/html&css.jpg" alt="HTML & CSS Certificate">
                     </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="certficates">
-                    <u><h3>2. Python Certificate</h3></u>
-                    <br>
-                    <p>Issued by : Guvi</p>
-                    <br>
-                    <p>Credential ID : 169b9g8E41Y4ZoR301</p>
-                    <br>
-                    <p class="certificate_link">Crediential Link:
+                <div class="certificate-card">
+                    <h3>Python Certificate</h3>
+                    <p>Issued by: Guvi</p>
+                    <p>Credential ID: 169b9g8E41Y4ZoR301</p>
+                    <p class="certificate_link">Credential Link: 
                         <a href="https://www.guvi.in/certificate.html?id=169b9g8E41Y4ZoR301">Python</a>
                     </p>
-
                     <div class="certificate_img">
                         <img src="iMAGES/pythoncertificate.png" alt="Python Certificate">
                     </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="certficates">
-                    <u><h3>3. Supervised Machine Learning</h3></u>
-                    <br>
-                    <p>Issued by : Coursera</p>
-                    <br>
-                    <p>Credential ID : LZJTACWP9YAP</p>
-                    <br>
-                    <p class="certificate_link">Crediential Link:
+                <div class="certificate-card">
+                    <h3>Supervised Machine Learning</h3>
+                    <p>Issued by: Coursera</p>
+                    <p>Credential ID: LZJTACWP9YAP</p>
+                    <p class="certificate_link">Credential Link: 
                         <a href="https://www.coursera.org/account/accomplishments/certificate/LZJTACWP9YAP">Supervised ML</a>
                     </p>
-
                     <div class="certificate_img">
-                        <img src="iMAGES/SupervisedML.png" alt="Supervised">
+                        <img src="iMAGES/SupervisedML.png" alt="Supervised ML Certificate">
                     </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="certficates">
-                    <u><h3>4. Advanced Learning Algorithms</h3></u>
-                    <br>
-                    <p>Issued by : Coursera</p>
-                    <br>
-                    <p>Credential ID : UVK6MCNL3X4N</p>
-                    <br>
-                    <p class="certificate_link">Crediential Link:
-                        <a href="https://coursera.org/verify/UVK6MCNL3X4N">Advance Learning Algorithms</a>
+                <div class="certificate-card">
+                    <h3>Advanced Learning Algorithms</h3>
+                    <p>Issued by: Coursera</p>
+                    <p>Credential ID: UVK6MCNL3X4N</p>
+                    <p class="certificate_link">Credential Link: 
+                        <a href="https://coursera.org/verify/UVK6MCNL3X4N">Advanced Learning Algorithms</a>
                     </p>
-
                     <div class="certificate_img">
-                        <img src="iMAGES/advancelearningalgo.png" alt="advancelearningalgo">
+                        <img src="iMAGES/advancelearningalgo.png" alt="Advanced Learning Algorithms Certificate">
                     </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="certficates">
-                    <u><h3>5. Unsupervised Learning, Recommenders, Reinforcement Learning</h3></u>
-                    <br>
-                    <p>Issued by : Coursera</p>
-                    <br>
-                    <p>Credential ID : ZWGE6JWNL7W9</p>
-                    <br>
-                    <p class="certificate_link">Crediential Link:
-                        <a href="https://coursera.org/verify/ZWGE6JWNL7W9">Unsupervised Leaning</a>
+                <div class="certificate-card">
+                    <h3>Unsupervised Learning, Recommenders, Reinforcement Learning</h3>
+                    <p>Issued by: Coursera</p>
+                    <p>Credential ID: ZWGE6JWNL7W9</p>
+                    <p class="certificate_link">Credential Link: 
+                        <a href="https://coursera.org/verify/ZWGE6JWNL7W9">Unsupervised Learning</a>
                     </p>
-
                     <div class="certificate_img">
-                        <img src="iMAGES/Screenshot (13).png" alt="Unsupervisedlearning">
+                        <img src="iMAGES/Screenshot (13).png" alt="Unsupervised Learning Certificate">
                     </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="certficates">
-                    <u><h3>6. Introduction to Natural Language Processing</h3></u>
-                    <br>
-                    <p>Issued by : Infosys Springboard</p>
-
+                <div class="certificate-card">
+                    <h3>Introduction to Natural Language Processing</h3>
+                    <p>Issued by: Infosys Springboard</p>
                     <div class="certificate_img">
-                        <img src="iMAGES/nlp.png" alt="natural-language-processing">
+                        <img src="iMAGES/nlp.png" alt="NLP Certificate">
                     </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="certficates">
-                    <u><h3>7. Introduction to Deep Learning</h3></u>
-                    <br>
-                    <p>Issued by : Infosys Springboard</p>
-
+                <div class="certificate-card">
+                    <h3>Introduction to Deep Learning</h3>
+                    <p>Issued by: Infosys Springboard</p>
                     <div class="certificate_img">
-                        <img src="iMAGES/Deep Leaning (DL).png" alt="natural-language-processing">
+                        <img src="iMAGES/Deep Leaning (DL).png" alt="Deep Learning Certificate">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="second_section">
-            <h1><span><u>Internship Certificates</u></span></h1>
-            <div class="box">
-                <div class="certficates">
-                    <u><h3>1. Front-End Web Developer Intern</h3></u>
-                    <br>
+        <section class="second_section container">
+            <h1 class="section-heading"><u>Internship Certificates</u></h1>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <h3>Front-End Web Developer Intern</h3>
                     <div class="certificate_img">
-                        <img src="iMAGES/FED Intern.jpg" alt="Html&CSS certificate">
+                        <img src="iMAGES/FED Intern.jpg" alt="Front-End Developer Intern Certificate">
                     </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="certficates">
-                    <u><h3>2. Python Developer Intern</h3></u>
-                    <br>
+                <div class="certificate-card">
+                    <h3>Python Developer Intern</h3>
                     <div class="certificate_img">
-                        <img src="iMAGES/python internship.png" alt="Python Certificate">
+                        <img src="iMAGES/python internship.png" alt="Python Intern Certificate">
                     </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="certficates">
-                    <u><h3>3. Machine Learning Intern</h3></u>
-                    <br>
+                <div class="certificate-card">
+                    <h3>Machine Learning Intern</h3>
                     <div class="certificate_img">
-                        <img src="iMAGES/ML Intern.png" alt="ML certificate">
+                        <img src="iMAGES/ML Intern.png" alt="ML Intern Certificate">
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer">
-            <div class="footer-first">
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="footer-first text-center">
                 <h3>Laxmi's Developer Portfolio</h3>
             </div>
-            <div class="footer-second">
-                <h3>Copyright © 2023 SB</h3>
+            <div class="footer-second text-center">
+                <h3>Copyright © 2025 Laxmi Narayan Sahu</h3>
             </div>
-            <div class="footer-third">
-                <ul>
-                    <li><a href="https://github.com/lns977"><img src="iMAGES\github.png" alt="github img"></li></a>
-                    <li><a href="https://vercel.com/dashboard"><img src="iMAGES\vercel.png" alt="vercel img"></li></a>
-                    <li><a href="https://twitter.com/LaxmiNa38218414"><img src="iMAGES\Twitter.png" alt="Twitter img"></li></a>
-                    <li><a href="https://www.instagram.com/laxmisahu719/"><img src="iMAGES\insta.png" alt="insta img"></li></a>
-                    <li><a href="https://www.linkedin.com/in/laxmi-narayana-sahu-05a657237/"><img src="iMAGES\linkedln.png" alt="linkedln img"></li></a>
-                </ul>
+            <div class="social-links">
+                <a href="https://github.com/lns977"><img src="iMAGES\github.png" alt="GitHub"></a>
+                <a href="https://vercel.com/dashboard"><img src="iMAGES\vercel.png" alt="Vercel"></a>
+                <a href="https://twitter.com/LaxmiNa38218414"><img src="iMAGES\Twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/laxmisahu719/"><img src="iMAGES\insta.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/laxmi-narayana-sahu-05a657237/"><img src="iMAGES\linkedln.png" alt="LinkedIn"></a>
             </div>
         </div>
     </footer>
 </body>
-
 </html>

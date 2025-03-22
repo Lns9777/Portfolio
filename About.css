@@ -1,35 +1,76 @@
-body, html {
+/* Base styles */
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    font-size: 16px; /* Base font size for rem units */
 }
 
-/* Mobile-first styles */
+body, html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
 header {
+    background-color: #2c3e50;
     color: #fff;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header nav {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 1.5rem; /* Increased from 1rem to 1.5rem for a taller nav */
 }
 
 header .left {
+    display: flex;
+    align-items: center;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-weight: 500;
 }
+
+.logoimg {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    position: relative;
+}
+
+.nav-toggle-label span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.nav-toggle-label span:nth-child(1) { top: 0; }
+.nav-toggle-label span:nth-child(2) { top: 10px; }
+.nav-toggle-label span:nth-child(3) { top: 20px; }
 
 header .right ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     gap: 1.5rem;
 }
@@ -38,13 +79,20 @@ header .right ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
 }
 
+header .right ul li a:hover {
+    color: #3498db;
+}
+
+/* First Section */
 .first-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 4rem 0;
+    margin: 2rem 0;
     padding: 0 1rem;
 }
 
@@ -52,10 +100,15 @@ header .right ul li a {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     text-align: center;
+    color: #2c3e50;
+}
+
+.purple {
+    color: #8e44ad;
 }
 
 .about_desc p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.6;
     margin: 1rem 0;
     max-width: 60ch;
@@ -63,31 +116,34 @@ header .right ul li a {
 
 .right_part img {
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     height: auto;
     margin-top: 2rem;
+    border-radius: 10px;
 }
 
 .aboutactivity {
     list-style: square;
     padding-left: 1.5rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.6;
     max-width: 60ch;
     margin: 0 auto;
 }
 
+/* Skills Sections */
 .section-heading {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 500;
     margin: 3rem 0;
     text-align: center;
+    color: #2c3e50;
 }
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
     padding: 0 1rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -97,87 +153,61 @@ header .right ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem;
-    border: 1.7px solid rgba(200,137,230,.637);
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 4px 5px 4px 3px rgba(89,4,168,.137);
-    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .skill-card img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.skill-card h5 {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.footer-first h3, .footer-second h3 {
+    font-size: 1rem;
     margin-bottom: 1rem;
 }
 
-/* Medium screens (768px and up) */
-@media (min-width: 768px) {
-    header nav {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 2rem;
-    }
-
-    header .left {
-        margin-bottom: 0;
-    }
-
-    .first-section {
-        flex-direction: row;
-        justify-content: center;
-        gap: 4rem;
-        margin: 8rem 0;
-    }
-
-    .left_part h1 {
-        font-size: 2.5rem;
-        text-align: left;
-    }
-
-    .about_desc p {
-        font-size: 1.2rem;
-    }
-
-    .right_part img {
-        margin-top: 0;
-        width: 40vw;
-        max-width: 500px;
-    }
-
-    .section-heading {
-        font-size: 2.5rem;
-        margin: 5rem 0;
-    }
-
-    .skills-container {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 2rem;
-    }
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
 }
 
-/* Large screens (1024px and up) */
-@media (min-width: 1024px) {
-    .left_part h1 {
-        font-size: 3rem;
-    }
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
 
-    .about_desc p {
-        font-size: 1.3rem;
-    }
-
-    .section-heading {
-        font-size: 3rem;
-    }
-
-    .skill-card img {
-        width: 100px;
-        height: 100px;
-    }
+.social-links img:hover {
+    transform: scale(1.1);
 }
 
 /* Utilities */
@@ -188,26 +218,96 @@ header .right ul li a {
     padding: 0 1rem;
 }
 
-.footer {
-    background-color: rgb(80, 73, 121);
-    color: #fff;
-    padding: 2rem 0;
-    margin-top: 4rem;
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 2rem 0;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 1rem 0;
+/* Hamburger Menu and Responsive Adjustments */
+@media (max-width: 768px) {
+    .nav-toggle-label {
+        display: block;
+        position: absolute;
+        top: 0.5rem; /* Adjusted from 1.5rem to align with taller nav */
+        right: 1rem;
+    }
+    .right {
+        display: none;
+        width: 100%;
+        background: #34495e;
+        position: absolute;
+        top: 100%; /* Stays aligned with bottom of taller nav */
+        left: 0;
+    }
+    .nav-toggle:checked ~ .right {
+        display: block;
+    }
+    .right ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+    }
+    .right ul li a {
+        padding: 0.75rem;
+        display: block;
+    }
+    .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) {
+        opacity: 0;
+    }
+    .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
 }
 
-.social-links img {
-    width: 35px;
-    height: 35px;
-    transition: transform 0.3s ease;
+@media (min-width: 769px) {
+    header nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.5rem 2rem; /* Increased from 1rem to 1.5rem for consistency */
+    }
+    .right {
+        display: block;
+    }
+    .first-section {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+        margin: 4rem 0;
+    }
+    .left_part h1 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+    .about_desc p {
+        font-size: 1.1rem;
+    }
+    .right_part img {
+        margin-top: 0;
+        max-width: 450px;
+    }
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1.5rem;
+    }
 }
 
-.social-links img:hover {
-    transform: translateY(-3px);
+@media (min-width: 1024px) {
+    .left_part h1 {
+        font-size: 3rem;
+    }
+    .about_desc p {
+        font-size: 1.2rem;
+    }
+    .section-heading {
+        font-size: 2.5rem;
+    }
+    .skill-card img {
+        width: 80px;
+        height: 80px;
+    }
 }
