@@ -1,10 +1,10 @@
 /* Base styles */
 :root {
-    --primary-color: #4a56c8;
-    --secondary-color: #f0f0f0;
-    --accent-color: #3be518;
-    --max-content-width: 1200px;
-    --section-padding: clamp(2rem, 5vw, 4rem);
+    --primary-color: #1e3a8a; /* Professional deep blue */
+    --secondary-color: #f7f9fc; /* Light, clean background */
+    --accent-color: #10b981; /* Sophisticated green for links/buttons */
+    --max-content-width: 1280px; /* Slightly wider for modern screens */
+    --section-padding: clamp(2.5rem, 6vw, 5rem); /* More spacious padding */
 }
 
 *,
@@ -22,19 +22,20 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
+    line-height: 1.7; /* Slightly increased for readability */
     background-color: var(--secondary-color);
-    color: #333;
+    color: #2d3748; /* Softer, professional gray */
 }
 
 /* Header styles */
 header {
-    background: rgba(0, 0, 0, 0.95);
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.95), rgba(49, 76, 153, 0.95)); /* Gradient for depth */
     color: #fff;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow */
+    padding: 0.5rem 0; /* Slimmer header */
 }
 
 nav {
@@ -42,7 +43,7 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1rem 2rem; /* More horizontal padding */
     max-width: var(--max-content-width);
     margin: 0 auto;
     position: relative;
@@ -51,19 +52,20 @@ nav {
 .left {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.75rem; /* Larger for prominence */
+    font-weight: 600; /* Bolder for professionalism */
 }
 
 .logoimg {
-    width: 40px;
-    height: 40px;
-    margin-right: 0.5rem;
+    width: 48px; /* Slightly larger logo */
+    height: 48px;
+    margin-right: 0.75rem;
+    border-radius: 50%; /* Circular for polish */
     transition: transform 0.3s ease;
 }
 
 .logoimg:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .nav-toggle {
@@ -73,8 +75,8 @@ nav {
 .nav-toggle-label {
     display: none;
     cursor: pointer;
-    width: 30px;
-    height: 25px;
+    width: 32px;
+    height: 26px;
     position: relative;
 }
 
@@ -88,27 +90,30 @@ nav {
 }
 
 .nav-toggle-label span:nth-child(1) { top: 0; }
-.nav-toggle-label span:nth-child(2) { top: 10px; }
-.nav-toggle-label span:nth-child(3) { top: 20px; }
+.nav-toggle-label span:nth-child(2) { top: 11px; }
+.nav-toggle-label span:nth-child(3) { top: 22px; }
 
 .nav-links {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 1.5rem;
+    gap: 2rem; /* More spacing for clarity */
 }
 
 .nav-links a {
     color: #fff;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+    padding: 0.75rem 1.25rem; /* Larger clickable area */
+    border-radius: 6px;
+    font-weight: 500; /* Bolder text */
+    text-transform: uppercase; /* Professional touch */
+    letter-spacing: 0.5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-links a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
     color: var(--accent-color);
 }
 
@@ -116,127 +121,162 @@ nav {
 .first_section,
 .second_section {
     padding: var(--section-padding);
-    margin: 0 auto;
+    margin: 2rem auto; /* More vertical spacing */
     max-width: var(--max-content-width);
+    background: #fff; /* White background for contrast */
+    border-radius: 12px; /* Subtle rounding */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Soft shadow */
 }
 
 .section-heading {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-size: clamp(2rem, 5vw, 3rem); /* Larger for emphasis */
     color: var(--primary-color);
     text-align: center;
-    margin-bottom: 2rem;
-    font-weight: 500;
+    margin-bottom: 3rem; /* More spacing below */
+    font-weight: 700; /* Bolder for hierarchy */
+    letter-spacing: 0.5px;
 }
 
 /* Certificate cards */
-.certificates-grid {
+.certificates-grid,
+.certificates-grid-1 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Wider cards */
+    gap: 2rem; /* More spacing */
+    padding: 2rem;
 }
 
-.certificate-card {
+.certificate-card,
+.certificate-card-1 {
     background: #fff;
-    border: 1px solid #e0dede;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: none; /* Remove border for cleaner look */
+    border-radius: 12px;
+    padding: 2rem; /* More padding */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08); /* Deeper shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.certificate-card:hover {
+.certificate-card:hover,
+.certificate-card-1:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
-.certificate-card h3 {
-    font-size: 1.25rem;
+.certificate-card h3,
+.certificate-card-1 h3 {
+    font-size: 1.5rem; /* Larger title */
     color: var(--primary-color);
-    margin-bottom: 0.75rem;
-    font-weight: 500;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
-.certificate-card p {
-    font-size: 0.95rem;
-    margin: 0.5rem 0;
+.certificate-card p,
+.certificate-card-1 p {
+    font-size: 1rem; /* Slightly larger text */
+    margin: 0.75rem 0;
+    color: #4a5568; /* Softer gray */
+    line-height: 1.8; /* Better readability */
 }
 
 .certificate_img img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 4px;
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: contain; /* Preserve aspect ratio */
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    border: 1px solid #e2e8f0; /* Subtle border */
+}
+
+.certificate_img-1 img {
+    width: 100%; /* Full width for consistency */
+    height: 200px; /* Match other cards */
+    object-fit: contain;
+    border-radius: 8px;
     margin-top: 1rem;
+    border: 1px solid #e2e8f0;
 }
 
 .certificate_link a {
     color: var(--accent-color);
     text-decoration: none;
-    font-weight: 500;
-    transition: text-decoration 0.3s ease;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .certificate_link a:hover {
-    text-decoration: underline;
+    background-color: rgba(16, 185, 129, 0.1); /* Subtle hover effect */
+    text-decoration: none;
 }
 
 /* Footer styles */
 .footer {
-    background: rgba(0, 0, 0, 0.95);
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.95), rgba(49, 76, 153, 0.95)); /* Match header */
     color: #fff;
-    padding: var(--section-padding) 1rem;
+    padding: 3rem 2rem;
     margin-top: 4rem;
+    border-top: 4px solid var(--accent-color); /* Accent line */
 }
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Wider columns */
+    gap: 3rem; /* More spacing */
     max-width: var(--max-content-width);
     margin: 0 auto;
 }
 
-.footer-first h3, .footer-second h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+.footer-first h3,
+.footer-second h3 {
+    font-size: 1.5rem; /* Larger for prominence */
+    font-weight: 600;
+    margin-bottom: 1.5rem;
 }
 
 .social-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem; /* More spacing */
     justify-content: center;
 }
 
 .social-links img {
-    width: 30px;
-    height: 30px;
+    width: 36px; /* Larger icons */
+    height: 36px;
+    filter: brightness(1.2); /* Brighter icons */
     transition: transform 0.3s ease;
 }
 
 .social-links img:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 /* Media queries */
 @media (max-width: 768px) {
     nav {
-        padding: 1rem;
+        padding: 1rem 1.5rem;
+    }
+    .left {
+        font-size: 1.5rem; /* Adjust for smaller screens */
+    }
+    .logoimg {
+        width: 40px;
+        height: 40px;
     }
     .nav-toggle-label {
         display: block;
         position: absolute;
-        top: 1.5rem;
-        right: 1rem;
+        top: 1.25rem;
+        right: 1.5rem;
     }
     .nav-links {
         display: none;
         width: 100%;
-        background: rgba(0, 0, 0, 0.95);
+        background: rgba(30, 58, 138, 0.98); /* Match header */
         position: absolute;
         top: 100%;
         left: 0;
-        padding: 1rem 0;
+        padding: 2rem 0;
     }
     .nav-toggle:checked ~ .nav-links {
         display: flex;
@@ -244,36 +284,57 @@ nav {
         align-items: center;
     }
     .nav-links a {
-        padding: 0.75rem;
-        display: block;
+        padding: 1rem;
+        font-size: 1.1rem;
     }
     .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
-        transform: rotate(45deg) translate(7px, 7px);
+        transform: rotate(45deg) translate(8px, 8px);
     }
     .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) {
         opacity: 0;
     }
     .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -7px);
+        transform: rotate(-45deg) translate(8px, -8px);
     }
-    .certificate_img img {
-        height: 150px;
+    .certificate_img img,
+    .certificate_img-1 img {
+        height: 180px; /* Adjusted for tablets */
+    }
+    .section-heading {
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
     }
 }
 
 @media (max-width: 480px) {
-    .certificates-grid {
+    .certificates-grid,
+    .certificates-grid-1 {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 1.5rem;
     }
-    .certificate-card {
-        padding: 1rem;
+    .certificate-card,
+    .certificate-card-1 {
+        padding: 1.5rem;
     }
-    .certificate-card h3 {
-        font-size: 1.1rem;
+    .certificate-card h3,
+    .certificate-card-1 h3 {
+        font-size: 1.25rem;
     }
-    .certificate_img img {
-        height: 120px;
+    .certificate_img img,
+    .certificate_img-1 img {
+        height: 150px;
+    }
+    .section-heading {
+        font-size: clamp(1.5rem, 3.5vw, 2rem);
+    }
+    .footer-content {
+        gap: 2rem;
+    }
+    .social-links {
+        gap: 1.5rem;
+    }
+    .social-links img {
+        width: 32px;
+        height: 32px;
     }
 }
 
