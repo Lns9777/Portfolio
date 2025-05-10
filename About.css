@@ -15,7 +15,7 @@ body, html {
 
 /* Header */
 header {
-    background-color: #1a202c; /* Darker, more sophisticated navy */
+    background-color: #2c3e50; /* Darker, more sophisticated navy */
     color: #fff;
     position: sticky;
     top: 0;
@@ -216,26 +216,42 @@ header .right ul li a:hover {
 
 /* Footer */
 .footer {
-    background-color: #1a202c;
-    color: #e2e8f0;
-    padding: 3rem 0; /* More padding */
-    margin-top: 5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #2c3e50;
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer-first h3, .footer-second h3 {
-    font-size: 1.1rem;
+    color: #ecf0f1; /* Light gray for contrast */
+    font-size: 1.25rem;
     font-weight: 500;
-    margin-bottom: 1.25rem;
+    margin: 0.5rem 0;
 }
 
 .social-links {
-    gap: 2rem; /* More spacing */
+    display: flex;
+    gap: 1.5rem; /* Increased spacing */
 }
 
 .social-links img {
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
+    filter: brightness(90%); /* Slightly muted for professionalism */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+    filter: brightness(100%);
 }
 
 /* Utilities */

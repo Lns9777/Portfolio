@@ -1,0 +1,83 @@
+/* Reset/Defaults */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  background-color: #f8f9fa;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Card Animation Styles */
+.card {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* When JS adds animate class */
+.card.animate {
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+/* Slide Up Animation Keyframes */
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modal Animation (Optional) */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 999;
+}
+
+.modal.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  max-width: 90%;
+  border-radius: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Footer & Nav adjustments (optional, depending on original styles) */
+.footer {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-links img {
+  width: 24px;
+  margin: 0 10px;
+  filter: brightness(0) invert(1);
+}

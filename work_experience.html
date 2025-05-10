@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laxmi - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,300;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="work_experience.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="left">
+        <img class="logoimg" src="images/L_1.png" alt="Logo">
+        Laxmi's Portfolio
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span><span></span><span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About Me</a></li>
+        <li><a href="work_experience.html" class="active">Work Experience</a></li>
+        <li><a href="certificate.html">Certificates</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="Resume.html">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="header">
+      <h2>Work Experience</h2>
+      <br>
+    </div>
+    <div class="cards">
+      <!-- Card with certificate modal -->
+       <div class="card" data-cert="iMAGES/Pravaah.png">
+        <h2>Machine Learning Engineer Intern</h2>
+        <div class="subtitle">Pravaah Consulting <br> • Mar 2025 – Present</div>
+        <p>Converted as a Full Timer at the same Organisation and got the designation of <b>Associated Technology (L-1) AI/ML Developer / Software Engineer</b>.</p>
+        <h4>Worked on Projects</h4>
+        <ul>
+          <!-- <li>AI Based - Kitchen Assistant</li>
+          <li>AI Based - Blog Writer</li>
+          <li>AI Based - Social Media Calender</li>
+          <li>AI Chatbot for a particular website.</li>
+          <li>AI Based - Study Companion</li>
+          <li>AI Based - Mental Health Assistant</li>
+          <li>AI Based - Journaling</li>
+          <li>AI Based - TravelGPT</li>
+          <li>AI Based - Image Background Remover</li>
+          <li>etc .....</li> -->
+          <li>Worked on different AI Based Projects.</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cert="iMAGES/Pravaah.png">
+        <h2>Machine Learning Engineer Intern</h2>
+        <div class="subtitle">Pravaah Consulting <br> • June 2024 – Mar 2025</div>
+        <p>In my fourth year of college, I secured my first paid internship and was thrilled to work with cutting-edge AI technologies. Throughout the internship, I contributed to several AI-driven projects that progressed to production, and I gained invaluable hands-on experience and skills in the process.</p>
+        <h4>Worked on Projects</h4>
+        <ul>
+          <!-- <li>AI Based - Kitchen Assistant</li>
+          <li>AI Based - Blog Writer</li>
+          <li>AI Based - Social Media Calender</li>
+          <li>AI Chatbot for a particular website.</li>
+          <li>AI Based - Study Companion</li>
+          <li>AI Based - Mental Health Assistant</li>
+          <li>AI Based - Journaling</li>
+          <li>AI Based - TravelGPT</li>
+          <li>AI Based - Image Background Remover</li>
+          <li>etc .....</li> -->
+          <li>Worked on different AI Based Projects.</li>
+        </ul>
+      </div>
+
+      <div class="card" data-cert="iMAGES/xeta intenship.png">
+        <h2>Machine Learning Engineer Intern</h2>
+        <div class="subtitle">Xeta Labs India <br> • June 2024 – August 2024</div>
+        <p>During my internship at Xeta Labs, I was assigned an image-based machine learning project focused on image construction techniques, and I felt truly privileged to receive expert mentorship throughout the process.</p>
+        <h4>Worked on Projects</h4>
+        <ul>
+          <li>Worked on Image Construction using OpenCV.</li>
+        </ul>
+      </div>
+
+       <div class="card" data-cert="iMAGES/python internship.png">
+        <h2>Python Developer Intern</h2>
+        <div class="subtitle">CodeSpeedy Technology Pvt Ltd. <br> • June 2023 – August 2023</div>
+        <p>During my Python internship, I led a four-member team—organizing sprint plans, distributing tasks aligned with each member’s strengths, and conducting code reviews—to deliver a fully functional data-processing module two weeks ahead of schedule.</p>
+        <h4>Worked on Projects</h4>
+        <ul>
+          <li>
+            <a href="https://coderspacket.com/billing-management-system" target="_blank" rel="noopener">
+              Built a Billing Management System in Python using Tkinter.
+            </a>
+          </li>
+          <li>
+            <a href="https://coderspacket.com/url-shortener-using-python-16901846431995">
+              Built an URL Shortener using Python.
+            </a>
+          </li>
+          <li><a href="https://coderspacket.com/count-number-of-faces-from-an-image-using-opencv-in-python">
+            Built a project using OpenCV – Count No. of Faces from an Image using OpenCV in Python.
+            </a>
+          </li>
+        </ul>
+        </div>
+
+      <div class="card" data-cert="iMAGES/FED Intern.jpg">
+        <h2>Frontend Web Developer Intern</h2>
+        <div class="subtitle">IBM Skills Build <br> • June 2023 – July 2023</div>
+        <p>Learned HTML, CSS and basic JavaScript (JS).</p>
+        <h4>Worked on Projects</h4>
+        <ul>
+          <li>Earned certifications in HTML, CSS, and JavaScript.</li>
+          <li><a href="https://ecommerce-site-bkbr.vercel.app/">
+            Built an Amazon e-commerce website clone from scratch.
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- More cards... -->
+    </div>
+  </main>
+
+  <!-- Certificate Modal -->
+  <div id="cert-modal" class="modal">
+    <div class="modal-content">
+      <span id="cert-close" class="modal-close">&times;</span>
+      <h3>Certificate</h3>
+      <img id="cert-img" src="" alt="Certificate" style="max-width:100%;">
+    </div>
+  </div>
+
+  <footer class="footer">
+      <div class="container">
+          <div class="footer-first"><h3>Laxmi's Developer Portfolio</h3></div>
+          <div class="footer-second"><h3>Copyright © 2025 Laxmi Narayan Sahu</h3></div>
+          <div class="social-links">
+              <a href="https://github.com/Lns9777"><img src="iMAGES\github.png" alt="GitHub"></a>
+              <a href="https://vercel.com/dashboard"><img src="iMAGES\vercel.png" alt="Vercel"></a>
+              <a href="https://twitter.com/LaxmiNa38218414"><img src="iMAGES\Twitter.png" alt="Twitter"></a>
+              <a href="https://www.instagram.com/laxmisahu719/"><img src="iMAGES\insta.png" alt="Instagram"></a>
+              <a href="https://www.linkedin.com/in/laxmi-narayana-sahu-05a657237/"><img src="iMAGES\linkedln.png" alt="LinkedIn"></a>
+          </div>
+      </div>
+  </footer>
+
+  <script src="work_experience.js"></script>
+</body>
+</html>

@@ -1,0 +1,405 @@
+General Reset
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container { max-width: 1100px; margin: auto; padding: 20px; }
+
+/* Header & Nav */
+header { background-color: #f0f0f0; padding: 10px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+nav.container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.left { font-size: 1.5rem; font-weight: 600; display: flex; align-items: center; gap: 10px; }
+.logoimg { height: 40px; }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links li a { text-decoration: none; color: #333; font-weight: 500; }
+.nav-links li a:hover, .nav-links li a.active { color: #7c3aed; }
+.nav-toggle { display: none; }
+.nav-toggle-label { display: none; cursor: pointer; }
+@media (max-width: 768px) {
+  .nav-links { flex-direction: column; display: none; background-color: #fff; width: 100%; padding: 10px 0; }
+  .nav-toggle:checked ~ .nav-links { display: flex; }
+  .nav-toggle-label { display: block; }
+  .nav-toggle-label span { display: block; width: 25px; height: 3px; background: #333; margin: 5px 0; }
+}
+
+/* Main Section */
+.header { text-align: center; margin: 40px 0; }
+.header h2 { font-size: 2rem; color: #7c3aed; }
+
+.cards { display: grid; grid-template-columns: 1fr; gap: 24px; }
+@media (min-width: 768px) { .cards { grid-template-columns: 1fr 1fr; } }
+
+.card {
+  background-color: #fdfdfd;
+  border-left: 6px solid #7c3aed;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.2);
+}
+.card h2 { font-size: 1.5rem; color: #7c3aed; margin-bottom: 5px; }
+.card .subtitle { font-size: 1rem; font-weight: 500; color: #555; margin-bottom: 10px; }
+.card p { font-size: 1rem; margin: 8px 0; }
+.card ul { margin: 10px 0 0 20px; }
+.card ul li { font-size: 0.95rem; color: #444; line-height: 1.6; }
+
+/* Footer */
+.footer { background-color: #f0f0f0; padding: 30px 0; text-align: center; margin-top: 40px; }
+.footer h3 { margin: 10px 0; }
+.social-links { margin-top: 15px; }
+.social-links a img { width: 30px; margin: 0 10px; transition: transform 0.3s ease; }
+.social-links a img:hover { transform: scale(1.2); }
+
+
+
+
+#############################################
+
+Base styles
+:root {
+    --primary-bg: #f5f6fa; /* Light gray background for a clean, professional look */
+    --nav-bg: #2c3e50; /* Dark blue for header/footer, sophisticated and modern */
+    --accent-color: #3498db; /* Vibrant blue for highlights, professional yet engaging */
+    --text-color: #333; /* Dark gray text for readability */
+    --secondary-text: #7f8c8d; /* Muted gray for secondary text */
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 16px; /* Consistent base font size */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: var(--nav-bg);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+nav.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+.left {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.logoimg {
+    width: 45px;
+    height: 45px;
+    margin-right: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.logoimg:hover {
+    transform: scale(1.05);
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    position: relative;
+}
+
+.nav-toggle-label span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.nav-toggle-label span:nth-child(1) { top: 0; }
+.nav-toggle-label span:nth-child(2) { top: 10px; }
+.nav-toggle-label span:nth-child(3) { top: 20px; }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Work Experience Cards Section */
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.card {
+    background-color: #fff;
+    border-left: 6px solid var(--accent-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.2);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.card .subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-text);
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.card ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.card ul li {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--nav-bg);
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-first h3, .footer-second h3 {
+    color: #ecf0f1; /* Light gray for contrast */
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem; /* Increased spacing */
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(90%); /* Slightly muted for professionalism */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+
+/* Responsive Nav & Layout */
+@media (max-width: 1024px) {
+    nav.container { padding: 1.5rem; }
+}
+
+@media (max-width: 768px) {
+    .nav-toggle-label { display: block; }
+    .nav-links {
+        display: none;
+        width: 100%;
+        background: var(--nav-bg);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+        padding: 1rem 0;
+        box-shadow: var(--shadow);
+    }
+    .nav-toggle:checked ~ .nav-links { display: flex; }
+    .nav-links a {
+        padding: 0.75rem 1rem;
+        font-size: 1.1rem;
+    }
+    .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) {
+        opacity: 0;
+    }
+    .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+}
+
+
+######################################
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laxmi - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,300;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="work_experience.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="left">
+        <img class="logoimg" src="images/L_1.png" alt="Logo">
+        Laxmi's Portfolio
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span><span></span><span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About Me</a></li>
+        <li><a href="work_experience.html">Work Experience</a></li>
+        <li><a href="certificate.html">Certificates</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="Resume.html">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="header">
+      <h2>Work Experience</h2>
+      <br>
+    </div>
+    <div class="cards">
+      <a class="card" href="" target="_blank" rel="noopener">
+        <h2>Frontend Web Developer Intern</h2>
+        <div class="subtitle">IBM Skills Build • June 2023 - July 2023</div>
+        <p>Learned HTML, CSS and basic JavaScript (JS).</p>
+        <ul>
+          <li>Built an Amazon e-commerce website clone from scratch.</li>
+          <li>Earned certifications in HTML, CSS, and JavaScript.</li>
+        </ul>
+      </a>
+
+      <a class="card" href="https://example.com/websolutions" target="_blank" rel="noopener">
+        <h2>Frontend Developer</h2>
+        <div class="subtitle">WebSolutions Ltd. • Jun 2018 – Dec 2020</div>
+        <p>Built responsive user interfaces with React and Redux, collaborated with designers to enhance UX.</p>
+        <ul>
+          <li>Optimized web applications for performance and accessibility</li>
+        </ul>
+      </a>
+
+      <a class="card" href="https://example.com/innovatex" target="_blank" rel="noopener">
+        <h2>Graduate Intern</h2>
+        <div class="subtitle">InnovateX Labs • Jul 2017 – May 2018</div>
+        <p>Developed proof-of-concept features in Python and Flask, assisted in data analysis tasks.</p>
+        <ul>
+          <li>Contributed to documentation and code reviews</li>
+        </ul>
+      </a>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+        <div class="container">
+            <div class="footer-first"><h3>Laxmi's Developer Portfolio</h3></div>
+            <div class="footer-second"><h3>Copyright © 2025 Laxmi Narayan Sahu</h3></div>
+            <div class="social-links">
+                <a href="https://github.com/Lns9777"><img src="iMAGES\github.png" alt="GitHub"></a>
+                <a href="https://vercel.com/dashboard"><img src="iMAGES\vercel.png" alt="Vercel"></a>
+                <a href="https://twitter.com/LaxmiNa38218414"><img src="iMAGES\Twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/laxmisahu719/"><img src="iMAGES\insta.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/in/laxmi-narayana-sahu-05a657237/"><img src="iMAGES\linkedln.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> -->
